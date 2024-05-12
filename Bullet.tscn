@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://c24b417oxtmg2"]
+
+[ext_resource type="Texture2D" uid="uid://hdsl60h82tju" path="res://assets/sprites/test tile 1.png" id="1"]
+[ext_resource type="Script" path="res://Bullet.gd" id="1_xve1d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_78kss"]
+size = Vector2(16, 9)
+
+[node name="Bullet" type="Node2D"]
+script = ExtResource("1_xve1d")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_78kss")
+one_way_collision_margin = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1")
+region_enabled = true
+region_rect = Rect2(32, 32, 16, 16)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

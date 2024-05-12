@@ -1,0 +1,5 @@
+res://default_env.tres
+res://main.tscn
+res://placers/tile_place.tscn
+res://placers/draggable_dummy.tscn
+res://placers/tile_place.gd

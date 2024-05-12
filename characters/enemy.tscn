@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbs20n4mc3nxk"]
+
+[ext_resource type="Script" path="res://characters/enemy.gd" id="1_miitk"]
+[ext_resource type="Texture2D" uid="uid://b1qyc4d1earuo" path="res://icon.png" id="1_tn0bq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_plvdy"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_miitk")
+
+[node name="enemy_hitbox" type="Area2D" parent="."]
+scale = Vector2(0.6466, 0.607493)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_hitbox"]
+scale = Vector2(3.29835, 3.34297)
+shape = SubResource("RectangleShape2D_plvdy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.6466, 0.607493)
+texture = ExtResource("1_tn0bq")
+
+[connection signal="area_entered" from="enemy_hitbox" to="." method="_on_area_2d_area_entered"]

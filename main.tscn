@@ -1,0 +1,113 @@
+[gd_scene load_steps=9 format=3 uid="uid://pbaanb62d4kg"]
+
+[ext_resource type="PackedScene" uid="uid://c0h36ktft2b8h" path="res://characters/player_test.tscn" id="1_cc6jg"]
+[ext_resource type="Script" path="res://GridContainer.gd" id="1_fnwon"]
+[ext_resource type="PackedScene" uid="uid://1dow7tsdgftq" path="res://placers/tile_place.tscn" id="2_xy77w"]
+[ext_resource type="PackedScene" uid="uid://dbs20n4mc3nxk" path="res://characters/enemy.tscn" id="2_y2gmq"]
+[ext_resource type="Texture2D" uid="uid://b1qyc4d1earuo" path="res://icon.png" id="3_w710k"]
+[ext_resource type="PackedScene" uid="uid://d4g6le1b3j7b4" path="res://placers/draggable_dummy.tscn" id="5_jsbr5"]
+
+[sub_resource type="FontFile" id="1"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="Theme" id="2"]
+default_font = SubResource("1")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 4.0
+offset_right = 4.0
+script = ExtResource("1_fnwon")
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 459.0
+offset_bottom = 301.0
+theme = SubResource("2")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+offset_right = 100.0
+offset_bottom = 100.0
+columns = 5
+
+[node name="grid_slot_placement" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="tr" parent="GridContainer/grid_slot_placement" index="0"]
+texture = ExtResource("3_w710k")
+region_rect = Rect2(32, 16, 16, 16)
+
+[node name="grid_slot_placement2" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement3" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement4" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement5" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement6" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement7" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement8" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement9" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement10" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement11" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement12" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement13" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement14" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="grid_slot_placement15" parent="GridContainer" instance=ExtResource("2_xy77w")]
+layout_mode = 2
+
+[node name="character" parent="." instance=ExtResource("1_cc6jg")]
+visible = false
+position = Vector2(109, 133)
+
+[node name="Node2D" parent="." instance=ExtResource("2_y2gmq")]
+visible = false
+position = Vector2(232, 127)
+
+[node name="rect02" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -83.0
+offset_top = 42.0
+offset_right = -43.0
+offset_bottom = 82.0
+
+[node name="draggable dummy" parent="." instance=ExtResource("5_jsbr5")]
+visible = false
+position = Vector2(126, 33)
+scale = Vector2(0.5, 0.5)
+
+[editable path="GridContainer/grid_slot_placement"]

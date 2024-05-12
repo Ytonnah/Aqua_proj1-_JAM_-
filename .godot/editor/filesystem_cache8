@@ -1,0 +1,21 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1715481889
+Bullet.gd::GDScript::-1::1715439448::0::1::::<>Node2D<>::
+Bullet.tscn::PackedScene::6727921021205256031::1715440825::0::1::::<><>::uid://hdsl60h82tju
+default_env.tres::Environment::2623659904447069038::1715450818::0::1::::<><>::
+GridContainer.gd::GDScript::-1::1715450463::0::1::::<>Control<>::
+icon.png::CompressedTexture2D::4245822970759358522::1715427812::1715433362::1::::<><>::
+main.tscn::PackedScene::1054897718117632822::1715450817::0::1::::<><>::uid://c0h36ktft2b8h::::res://characters/player_test.tscn<>res://GridContainer.gd<>uid://1dow7tsdgftq::::res://placers/tile_place.tscn<>uid://dbs20n4mc3nxk::::res://characters/enemy.tscn<>uid://b1qyc4d1earuo::::res://icon.png<>uid://d4g6le1b3j7b4::::res://placers/draggable_dummy.tscn
+::res://assets/::1715427911
+::res://assets/sprites/::1715433530
+test tile 1.png::CompressedTexture2D::498629255538351642::1715427865::1715433530::1::::<><>::
+::res://characters/::1715442317
+enemy.gd::GDScript::-1::1715439337::0::1::::<>Node2D<>::
+enemy.tscn::PackedScene::7268294426094622476::1715440825::0::1::::<><>::res://characters/enemy.gd<>uid://b1qyc4d1earuo
+player_test.gd::GDScript::-1::1715442317::0::1::::<>StaticBody2D<>::
+player_test.tscn::PackedScene::6543769092862359253::1715440825::0::1::::<><>::uid://hdsl60h82tju
+::res://placers/::1715450818
+draggable_dummy.gd::GDScript::-1::1715443120::0::1::::<>StaticBody2D<>::
+draggable_dummy.tscn::PackedScene::9209026903956874215::1715450818::0::1::::<><>::uid://b1qyc4d1earuo::::res://icon.png<>res://placers/draggable_dummy.gd
+tile_place.gd::GDScript::-1::1715450815::0::1::::<>Panel<>::
+tile_place.tscn::PackedScene::1831994104136236938::1715450817::0::1::::<><>::res://placers/tile_place.gd
